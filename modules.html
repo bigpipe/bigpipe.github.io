@@ -1,0 +1,21 @@
+---
+layout: default
+title: Modules Overview
+---
+
+<div class="posts">
+  {% for section in site.data.sections %}
+    <h1>{{ section.name }}</h1>
+    <h5>{{ section.description }}</h5>
+    <ul>
+      {% for project in section.projects %}
+        <li>
+          <a href="http://github.com/{{ project.repo }}" target="_blank">
+            {{project.name}}
+          </a> -
+          {{project.description}}
+        </li>
+      {% endfor %}
+    </ul>
+  {% endfor %}
+</div>

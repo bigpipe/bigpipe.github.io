@@ -1,0 +1,108 @@
+- name: Core projects
+  description: These are the individual components of the bigpipe framework.
+  projects:
+    - name: bigpipe
+      repo: bigpipe/bigpipe
+      description: A radical new web framework for Node.js optimized for modularity
+    - name: bigpipe.js
+      repo: bigpipe/bigpipe.js
+      description: The client-side library which is used in BigPipe to orchestrate the pagelets.
+    - name: pagelet
+      repo: bigpipe/pagelet
+      description: Pagelets are small re-usable composable standalone components that are used as the building blocks of your site.
+    - name: fortress
+      repo: bigpipe/fortress
+      description: Fortress is the Docker for front-end applications. It allows you to your code in a controlled and sandboxed environment.
+    - name: temper
+      repo: bigpipe/temper
+      description: Temper is a small module that compiles your templates for server-side usage and client-side usage through one single interface.
+- name: Development Helpers
+  description: Helpers in development of BigPipe
+  projects:
+    - name: assume
+      repo: bigpipe/assume
+      description: Human readable assert library for browsers and node.
+    - name: bigpipe-watch
+      repo: bigpipe/bigpipe-watch
+      description: Bigpipe plugin that will watch added pages, pagelets and their views for easy developing. As soon as a file is changed the content will be rediscovered and reloaded into Bigpipe's internals.
+    - name: illuminati
+      repo: bigpipe/illuminati
+      description: Illuminati is a test runner for mocha tests in node or phantom
+- name: Dependencies
+  description: These are the building blocks, experiments, components of our framework which have been reduced to smallers bits of re-usable open source code.
+  projects:
+    - name: supply
+      repo: bigpipe/supply
+      description: Supply is a minimal but high performance middleware system for Node.js.
+    - name: fusing
+      repo: bigpipe/fusing
+      description: Fusing is a small library that creates the base class that is used in all of bigpipe's components.
+    - name: hotpath
+      repo: bigpipe/hotpath
+      description: Hotpath is memory restricted cache layer.
+    - name: zipline
+      repo: bigpipe/zipline
+      description: Zipline attempts to discover what content encoding is supported for a given HTTP request. As research from Yahoo has shown you cannot trust the contents of the Accept-Encoding header and just "roll" with that.
+    - name: bootstrap-pagelet
+      repo: bigpipe/bootstrap-pagelet
+      description: This Pagelet is responsible for bootstrapping the client side of BigPipe and keeping state on the child pagelet queue.
+    - name: async-script
+      repo: bigpipe/async-script
+      description: Async load a javascript file.
+    - name: async-asset
+      repo: bigpipe/async-asset
+      description: Asynchronously load front-end assets. And with async, we mean truly async. Loading scripts async isn't that hard but loading a CSS file fully async in a cross browser manner can be utterly painful.
+    - name: floppy
+      repo: bigpipe/floppy
+      description: Floppy a file representation for assets. It will automatically clean up after it self after all dependent processes eject it.
+    - name: fabricator
+      repo: bigpipe/fabricator
+      description: Discover collections of constructible instances from strings (filepaths), arrays or objects.
+    - name: diagnostics-pagelet
+      repo: bigpipe/diagnostics-pagelet
+      description: Default diagnostics Pagelet used by the diagnostics and 500 Pagelet.
+    - name: 500-pagelet
+      repo: bigpipe/500-pagelet
+      description: This Pagelet is responsible for displaying server errors.
+    - name: 404-pagelet
+      repo: bigpipe/404-pagelet
+      description: This Pagelet is responsible for displaying 404 errors.
+    - name: fn.name
+      repo: bigpipe/fn.name
+      description: Extract the name of a given function. Nothing more than that.
+    - name: predefine
+      repo: bigpipe/predefine
+      description: Predefine makes Object.defineProperties your human readable and manageable.
+    - name: routable
+      repo: bigpipe/routable
+      description: Routable is a lightweight regular expression inspired HTTP route parser for Node.js.
+    - name: frames
+      repo: bigpipe/frames
+      description: Frames is a simple helper function that creates a pre-configured iframe and appends it to the given DOM element while providing a nice API for interacting with the iframe.
+    - name: supreme
+      repo: bigpipe/supreme
+      description: The sfs file system that we've developed is build against the native bindings of the module and all API calls have been tweaked for our specific use case.
+    - name: backtrace
+      repo: bigpipe/backtrace
+      description: A simple utility to create a full and human readable stack trace across node and browsers old ancient browsers which can be manipulated.
+    - name: smithy
+      repo: bigpipe/smithy
+      description: Preprocessing of CSS/JS meta-languages made easy through a singular API
+    - name: parsifal
+      repo: bigpipe/parsifal
+      description: Parsifal is a pure JavaScript port of jQuery's .val() method which is used to retrieve values from from elements.
+    - name: containerization
+      repo: bigpipe/containerization
+      description: Front-end code containization through iframes
+    - name: alcatraz
+      repo: bigpipe/alcatraz
+      description: Alcatraz is high-security prison for your application code.
+    - name: trailers
+      repo: bigpipe/trailers
+      description: Trailing headers can be sent after you've already written your initial HTTP headers, trailers.
+    - name: replaces
+      repo: bigpipe/replaces
+      description: Replaces is a micro library that moves the data formatting instructions to the template placeholders using special modifier chars.
+    - name: fittings
+      repo: bigpipe/fittings
+      description: Fittings allows you to easily fit different client-side frameworks in to BigPipe.

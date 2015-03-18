@@ -1,0 +1,40 @@
+---
+layout: default
+title: Home
+---
+
+<div class="posts">
+  {% for section in site.data.sections %}
+    <h1>{{ section.name }}</h1>
+    <h5>{{ section.description }}</h5>
+    <ul>
+      {% for project in section.projects %}
+        <li>
+          <a href="http://github.com/{{ project.repo }}" target="_blank">
+            {{project.name}}
+          </a> -
+          {{project.description}}
+        </li>
+      {% endfor %}
+    </ul>
+  {% endfor %}
+</div>
+
+<div>
+Temper Temlates:
+
+Temper is a small module that compiles your templates for server-side usage and client-side usage through one single interface. This makes it easy to create isomorphic JavaScript applications, which is awesome.
+
+The following template engines are supported:
+
+react-jsx, automatically discovered by using the .jsx extension.
+jade, automatically discovered by using the .jade extension.
+ejs, automatically discovered by using the .ejs extension.
+hogan.js, automatically discovered by using the .mustache extension.
+mustache, automatically discovered by using the .mustache extension.
+handlebars, automatically discovered by using the .mustache extension.
+html, automatically discovered by using the .html extension.
+
+
+[Build Status](http://img.shields.io/travis/bigpipe/async-asset/master.svg?style=flat-square)](https://travis-ci.org/bigpipe/async-asset) | [![Dependencies](https://img.shields.io/david/bigpipe/async-asset.svg?style=flat-square)](https://david-dm.org/bigpipe/async-asset) | [![Coverage Status](http://img.shields.io/coveralls/bigpipe/async-asset/master.svg?style=flat-square)](https://coveralls.io/r/bigpipe/async-asset?branch=master)
+</div>
